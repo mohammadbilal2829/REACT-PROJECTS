@@ -1,0 +1,240 @@
+/* ================= Google Font ================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ================= Reset ================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #4d6cf7;
+}
+
+/* ================= Main Container ================= */
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+/* ================= Card ================= */
+
+.card {
+  width: 370px;
+  background: #fff;
+
+  border-radius: 10px;
+  padding: 35px 30px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+/* ================= Input ================= */
+
+.input-box {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid #d6d6d6;
+
+  margin-bottom: 22px;
+  padding-bottom: 8px;
+}
+
+.icon {
+  color: #777;
+  font-size: 17px;
+  margin-right: 10px;
+}
+
+.input-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  font-size: 15px;
+  color: #222;
+
+  padding: 10px 0;
+}
+
+.input-box input::placeholder {
+  color: #9d9d9d;
+}
+
+.eye {
+  font-size: 18px;
+  color: #777;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.eye:hover {
+  color: #4d6cf7;
+}
+
+/* ================= Remember / Forgot ================= */
+
+.option-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 25px;
+
+  font-size: 14px;
+}
+
+.option-box label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  color: #555;
+  cursor: pointer;
+}
+
+.option-box a {
+  text-decoration: none;
+  color: #4d6cf7;
+  transition: 0.3s;
+}
+
+.option-box a:hover {
+  text-decoration: underline;
+}
+
+/* ================= Terms ================= */
+
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  color: #555;
+  font-size: 14px;
+
+  margin-bottom: 25px;
+
+  cursor: pointer;
+}
+
+/* ================= Checkbox ================= */
+
+input[type="checkbox"] {
+  accent-color: #4d6cf7;
+  cursor: pointer;
+}
+
+/* ================= Button ================= */
+
+.btn {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  background: #4d6cf7;
+  color: white;
+
+  padding: 13px;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #3555e5;
+}
+
+/* ================= Bottom Text ================= */
+
+.bottom-text {
+  margin-top: 22px;
+
+  text-align: center;
+
+  color: #555;
+  font-size: 14px;
+}
+
+.bottom-text a {
+  text-decoration: none;
+  color: #4d6cf7;
+  font-weight: 600;
+}
+
+.bottom-text a:hover {
+  text-decoration: underline;
+}
+
+/* ================= Responsive ================= */
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 390px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 25px 20px;
+  }
+
+  .card h2 {
+    font-size: 24px;
+  }
+
+  .option-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .btn {
+    font-size: 15px;
+  }
+}
